@@ -1,0 +1,70 @@
+.tabs,
+.tab {
+    height: 100px;
+    @include bp-medium-and-up {
+        height: 300px;
+    }
+}
+
+
+
+li.tab.col.s4 {
+    height: 100px;
+    @include bp-medium-and-up {
+        height: 300px;
+    } 
+}
+
+.tab li a {
+    height: 100px;
+    @include bp-medium-and-up {
+        height: 300px;
+    }
+    -webkit-transition: .3s -webkit-filter linear;
+    -moz-transition: .3s -moz-filter linear;
+    -moz-transition: .3s filter linear;
+    -ms-transition: .3s -ms-filter linear;
+    -o-transition: .3s -o-filter linear;
+    transition: .3s filter linear;
+}
+
+.tabs .tab a {
+    color: #fff;
+}
+
+.active {
+    -webkit-filter: none !important;
+    filter: none !important;
+    color: transparent !important;
+
+    @include bp-medium-and-down {
+        background-position: 0% 50% !important;
+        &::after {
+            top: 0;
+        }
+    }
+}
+
+.alex,
+.jake {
+    background-position: 0% 18% !important;
+}
+
+.team-img {  
+    -webkit-filter: grayscale(1) brightness(0.45) contrast(1.05);
+    filter: grayscale(1) brightness(0.45) contrast(1.05);
+    
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    background-attachment: scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    @include bp-small-and-down {
+        background-position: center bottom !important;
+    }
+}
+
+.card-image-ourteam {
+    max-height: 400px;
+}

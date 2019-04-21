@@ -1,0 +1,90 @@
+#second, #third{
+  visibility: hidden;
+}
+
+#loader {
+  display: block;
+  width: 25vw;
+  height: 25vh;
+}
+
+#loader-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 1);
+
+    -webkit-transition-property: opacity, z-index;
+    -moz-transition-property: opacity, z-index;
+    -o-transition-property: opacity, z-index;
+    -ms-transition-property: opacity, z-index;
+    transition-property: opacity, z-index;
+
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+    transition-duration: .3s;
+
+    -webkit-transition-delay:  0s;
+    -moz-transition-delay:  0s;
+    -o-transition-delay:  0s;
+    -ms-transition-delay:  0s;
+    transition-delay:  0s;
+
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    transition-timing-function: ease;
+    
+    will-change: opacity, z-index;
+
+    .show {
+        display: block;
+    }
+
+    h2 {
+        display: none;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1em;
+        font-size: 1em;
+        
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+
+    }
+}
+
+.loader-overlay {
+	position: relative;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.loader-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loaded {
+    opacity: 0;
+    z-index: -1000;
+}
+
+.centered {
+    text-align: center;
+
+}

@@ -1,0 +1,340 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Materialize
+# Mixins & Variables
+# Header
+# Footer
+
+# Blog & Contact
+# Our Team
+# Practice Areas
+# Testimonials
+# Front Page
+
+# Style
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Materialize
+--------------------------------------------------------------*/
+@charset "UTF-8";
+// material mixins
+// @import "components/prefixer";
+@import "components/mixins";
+@import "components/color";
+// material variables;
+@import "components/variables";
+// Reset
+@import "components/normalize";
+// material components
+@import "components/global";
+@import "components/badges";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/roboto";
+@import "components/typography";
+@import "components/transitions";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/chips";
+@import "components/materialbox";
+@import "components/forms/forms";
+@import "components/table_of_contents";
+@import "components/sideNav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/carousel";
+@import "components/tapTarget";
+@import "components/pulse";
+@import "components/date_picker/default";
+@import "components/date_picker/default.date";
+@import "components/date_picker/default.time";
+
+/*--------------------------------------------------------------
+# Mixins & Variables
+--------------------------------------------------------------*/
+@import "partials/mixins";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "partials/header";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "partials/footer";
+
+/*--------------------------------------------------------------
+# Blog & Contact
+--------------------------------------------------------------*/
+@import "partials/blog";
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+@import "partials/team";
+
+/*--------------------------------------------------------------
+# Practice Areas
+--------------------------------------------------------------*/
+@import "partials/practice";
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+@import "partials/testimonials";
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+@import "partials/front";
+
+
+/*--------------------------------------------------------------
+# Style
+--------------------------------------------------------------*/
+body {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+	font-family: 'Karla', arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: $textgrey;
+    margin-top: .5em;
+    margin-bottom: .6em;
+    font-weight: 300;
+}
+
+h1 {
+    @include bp-medium-and-down {
+        font-size: 3.2rem;
+    }
+    @include bp-xsmall-and-down {
+        font-size: 2.5rem;
+    }
+}
+
+p,
+blockquote {
+	font-family: 'Tinos', sans-serif;
+	color: $textgrey;
+    font-weight: 400;
+
+    @include bp-large-and-up {
+        font-size: 125%;
+    }
+}
+
+a {
+	font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+#wrapper {
+	flex: 1;
+}
+
+#sidenav-overlay {
+	z-index: 996;
+}
+
+.side-nav {
+    @include bp-xsmall-and-down {
+        width: 200px;
+    }
+}
+
+#loader-overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+
+    transition-property: opacity, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    will-change: opacity, transform;
+}
+
+.loader-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loaded {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.fade-in-target {
+	opacity: 0;
+}
+
+.header {
+    color: $primary-color;
+    font-size: 3.56rem;
+    line-height: 110%;
+    margin: 1.78rem 0 1.424rem 0;
+    font-weight: 200;
+    @include bp-medium-and-down {
+        font-size: 2.46rem;
+    }
+}
+
+.svg-main {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 115px;
+    min-height: 115px;
+    z-index: 0;
+    opacity: 1;
+
+    .svg--lg {
+        @include bp-medium-and-down {
+            display: none;
+        }
+
+    }
+}
+
+.displaynone {
+    display: none;
+}
+
+.header-small {
+    color: $textgrey;
+    line-height: 1.5;
+    font-size: 125%;
+    font-family: 'Montserrat';
+}
+
+// temporary Chrome bug fix for 'hoverable' class
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+span.badge {
+    border-radius: 5px;
+}
+
+#avvoCardLoader {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+
+    .preloader-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+#FormLoader {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+		opacity: 0;
+
+		.form-fb-span-submitted {
+			opacity: 0;
+			font-size: 20px;
+			color: $primary-color;
+			font-family: 'Tinos';
+		}
+
+    .preloader-wrapper {
+				width: 100%;
+        position: absolute;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+    }
+
+}
+
+.card-stacked {
+    .card-content {
+        @include bp-large-and-up {
+            text-align: center;
+        }
+    }
+}
+
+
+// Form Styles
+
+/* label color */
+.input-field label.active {
+ color: $primary-color !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: $primary-color !important;
+}
+
+
+// utility
+
+.margin-top-bottom-4 {
+	margin: 4em 0;
+}
+.margin-top-bottom-3 {
+	margin: 3em 0;
+}
+.margin-top-bottom-2 {
+	margin: 2em 0;
+}
+.margin-top-4 {
+	margin-top: 4em;
+}
+.margin-top-3 {
+	margin-top: 3em;
+}
+.margin-top-2 {
+	margin-top: 2em;
+}
+.margin-bottom-4 {
+	margin-bottom: 4em;
+}
+.margin-bottom-3 {
+	margin-bottom: 3em;
+}
+.margin-bottom-2 {
+	margin-bottom: 2em;
+}

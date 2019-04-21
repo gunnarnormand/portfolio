@@ -1,0 +1,323 @@
+#frontLoader {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    //background: rgba(255, 255, 255, 1);
+    background: #4c6451;
+}
+
+.front-loader-wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #829184;
+}
+
+#polySecond {
+  visibility: hidden;
+}
+#polyFourth {
+  visibility: hidden;
+}
+
+#frontLoaderSvg {
+    display: block;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.front-progress {
+    position: absolute;
+    top: 0;
+    height: 10px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.progress .determinate {
+    transition: none !important;
+    background: #4c6451;
+}
+
+.scroll-indicator-wrap {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 50;
+}
+
+#scrollIndicator {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: auto;
+    height: 50px;
+
+    @include bp-medium-and-down {
+      bottom: 57px;
+    }
+}
+
+#scrollIndicatorText {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    color: $primary-color;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+
+
+
+
+
+
+.scroll-container {
+	height: 4000px !important;
+	position: relative;
+    @include bp-medium-and-down {
+        height: px !important;
+    }
+}
+
+.holder {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+#arrowPath {
+	height: 100vh;
+	width: 100vw;
+    position: absolute;
+    bottom: 270px;
+}
+
+#quote {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Tinos';
+	font-weight: 400;
+    font-style: italic;
+    font-size: 2em;
+    width: 80%;
+    -webkit-font-smoothing: antialiased;
+    color: #28282a;
+}
+
+#lead {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Montserrat';
+	font-weight: 300;
+    font-style: italic;
+    font-size: 3em;
+    width: 65%;
+    -webkit-font-smoothing: antialiased;
+    color: #28282a;
+
+    @include bp-small-and-down {
+    	font-size: 2em;
+    	width: 80%;
+    }
+
+
+}
+
+#mainForestBg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: auto;
+	height: auto;
+	transform: translateX(-50%);
+
+	display: none;
+}
+#mainForestBgSmall {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: auto;
+	height: auto;
+	transform: translateX(-50%);
+
+	display: none;
+}
+
+
+
+
+
+
+.otherstuff {
+	position: relative;
+	// height: 125vh;
+	width:100%;
+    margin-top: -100vh;
+
+    @include bp-medium-and-down {
+        height: 100vh;
+    }
+}
+
+#main-bg-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+
+    .main-gradient {
+        width: 100%;
+        height: 125vh;
+        background-image: linear-gradient(to bottom, #fff 0%, #fff 50%, transparent 100%);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        @include bp-medium-and-down {
+            height: 100vh;
+        }
+    }
+
+    img.brand-logo {
+        @include bp-medium-and-down {
+            max-width: 550px
+        }
+    	@include bp-small-and-down {
+    		max-width: 350px
+    	}
+        @include bp-xsmall-and-down {
+            max-width: 300px
+        }
+    }
+
+    h4 {
+        color: $textgrey;
+        margin-top: 0;
+        margin-bottom: 2.1rem;
+        font-family: "Tinos";
+        text-transform: lowercase;
+        letter-spacing: 1px;
+    }
+
+    .valign {
+    	margin: 0 auto;
+    	text-transform: uppercase;
+    }
+
+    .cta-btn {
+    	z-index: 2;
+        margin: 2.1rem 0 1.68rem 0;
+        @include bp-medium-and-down {
+            margin: 3.1rem 0 0 0;
+        }
+    }
+}
+
+
+.svg-main--top {
+    top: 0;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+#team {
+    .tabs,
+    .tab {
+        height: 300px;
+        line-height: 500px;
+    }
+
+    li.tab.col.s3 {
+        height: 300px;
+        line-height: 500px;
+    }
+
+    .tab li a {
+        height: 300px;
+        line-height: 500px;
+
+    }
+
+    .tabs .tab a {
+        color: #fff;
+    }
+
+
+    @include bp-medium-and-down {
+        .active::after {
+            z-index: -1;
+            top: 0;
+        }
+
+    }
+
+    .active {
+        -webkit-filter: none;
+        filter: none;
+        color: transparent;
+    }
+
+
+    .alex,
+    .jake {
+        background-position: 0% 18%;
+    }
+
+    .team-img {
+
+
+
+        -webkit-filter: grayscale(1) brightness(0.45) contrast(1.05);
+        filter: grayscale(1) brightness(0.45) contrast(1.05);
+
+        background-repeat: no-repeat;
+        background-position: 0% 30%;
+        background-attachment: scroll;
+        background-size: cover;
+        -webkit-background-size: cover;
+
+        transition-property:filter, color, height;
+        transition-duration:.3s;
+        transition-timing-function:ease-in-out;
+        transition-delay:0s;
+
+        will-change: filter, color, background-size;
+    }
+
+}

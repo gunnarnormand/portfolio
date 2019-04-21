@@ -1,0 +1,22 @@
+.parallax-container {
+  height: 500px;
+  background-color: rgba(0,0,0,0.3);
+
+  @include bp-large-and-up {
+    height: 650px;
+  }
+}
+
+.primary-color {
+  background: $primary-color;
+}
+
+.btn-flat:hover {
+  background: transparent;
+}
+
+.card-content p {
+  color: $textgrey !important;
+  line-height: 1.5;
+  font-size: 125%;
+}
