@@ -990,7 +990,7 @@ span {
 
 	.heading {
 		font-size: 70%;
-		margin-bottom: 4em;
+		margin-bottom: 1em;
 
     @include bp-tablet {
 			font-size: 75%;
@@ -999,10 +999,10 @@ span {
 }
 
 .work-info-text-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: center;
 	max-width: 300px;
   margin: 0px auto;
 
@@ -1018,6 +1018,10 @@ span {
 }
 
 .close-btn-container {
+	position: absolute;
+	bottom: 2em;
+	left: 50%;
+	transform: translateX(-50%);
 
 	&:hover {
 		cursor: pointer;
@@ -1036,7 +1040,7 @@ span {
 }
 
 .work-info-text {
-	margin-top: 4em;
+	margin-top: 1em;
 }
 
 .work-info-heading {

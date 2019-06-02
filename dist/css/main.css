@@ -845,16 +845,12 @@ span {
         font-size: 0.75em; } }
   .work-info .heading {
     font-size: 70%;
-    margin-bottom: 4em; }
+    margin-bottom: 1em; }
     @media only screen and (min-width: 768px) {
       .work-info .heading {
         font-size: 75%; } }
 
 .work-info-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 300px;
   margin: 0px auto; }
   @media only screen and (min-width: 768px) {
@@ -866,8 +862,13 @@ span {
       max-width: 450px;
       margin: 3em auto; } }
 
-.close-btn-container:hover {
-  cursor: pointer; }
+.close-btn-container {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%); }
+  .close-btn-container:hover {
+    cursor: pointer; }
 
 .close-btn {
   width: 2em;
@@ -879,7 +880,7 @@ span {
       height: 3em; } }
 
 .work-info-text {
-  margin-top: 4em; }
+  margin-top: 1em; }
 
 .work-info-heading {
   text-align: center;
