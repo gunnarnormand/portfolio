@@ -1,0 +1,13 @@
+<svg id="a860a178-7ecc-4471-8f75-1dde39eb97a9" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.19 251.19">
+	<defs>
+		<style>
+			.fea95af3-7c89-4d1f-8c77-083691f99f2c {
+				fill: none;
+				stroke-miterlimit: 10;
+				stroke-width: 1.19px;
+				stroke: url("#a642e725-5db7-42ca-8ce5-3f96a29c6ea5");
+			}
+		</style>
+		<linearGradient id="a642e725-5db7-42ca-8ce5-3f96a29c6ea5" x1="71.06" y1="160.92" x2="-51.87" y2="90.28" gradientUnits="userSpaceOnUse"><stop offset="0.06" stop-color="#3cfc81"/><stop offset="0.94" stop-color="#fd971f"/></linearGradient>
+	</defs><rect class="fea95af3-7c89-4d1f-8c77-083691f99f2c" x="0.6" y="0.6" width="18" height="250"/>
+</svg>

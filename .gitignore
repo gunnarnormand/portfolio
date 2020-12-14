@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 .sftp-config
 sftp-config.json
+yarn.lock
+.well-known
+cgi-bin
+.htaccess
