@@ -129,8 +129,8 @@ const CursorModule = (function() {
 			}
 
 			polygon.smooth();
-		}
-	}
+		};
+	};
 
 	const initCursorHovers = () => {
 
@@ -140,7 +140,7 @@ const CursorModule = (function() {
 				scale: 2,
 				ease: Expo.easeOut
 			});
-		}
+		};
 
 		const handleSkipControlMouseLeave = e => {
 			TweenMax.to(innerCursor, 1, {
@@ -148,7 +148,7 @@ const CursorModule = (function() {
 				scale: 1,
 				ease: Expo.easeOut
 			});
-		}
+		};
 
 		const handleCanvasCursorMouseEnter = e => {
 			const navItem = e.currentTarget;
@@ -218,7 +218,7 @@ const CursorModule = (function() {
 			link.addEventListener('mouseenter', handleSocialCursorMouseEnter);
 			link.addEventListener('mouseleave', handleSocialCursorMouseLeave);
 		});
-	}
+	};
 
 	return {
 		init: init
