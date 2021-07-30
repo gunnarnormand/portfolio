@@ -1,540 +1,838 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Gunnar Normand | Interactive Developer</title>
+		<meta name="description" content="Gunnar Normand Portfolio" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link rel="stylesheet" href="dist/css/reset.min.css" />
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+	</head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Gunnar Normand | Interactive Developer</title>
-	<meta name="description" content="Gunnar Normand Portfolio">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="shortcut icon" href="./favicon.ico">
-	<link rel="stylesheet" href="dist/css/reset.min.css">
-	<link rel="stylesheet" href="dist/css/main.min.css">
-</head>
+	<body class="home-page" id="top">
+		<div class="cursor cursor--small"></div>
+		<canvas class="cursor cursor--canvas" resize></canvas>
+		<div id="loader" class="loader">
+			<img
+				id="loader-gif"
+				class="loader-gif"
+				src="./dist/img/loader_1.gif"
+				alt="gunnar.tech logo loader gif"
+			/>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+			<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
+		</div>
+		<div id="overview" class="overview" data-display="hide">
+			<div class="overview-wipe"></div>
 
-<body class="home-page" id="top">
-	<div class="cursor cursor--small"></div>
-	<canvas class="cursor cursor--canvas" resize></canvas>
-	<div id="loader" class="loader">
-		<img id="loader-gif" class="loader-gif" src="./dist/img/loader_1.gif" alt="gunnar.tech logo loader gif">
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-		<p class="code-line loader-text">[Gunnar.tech] $INIT $INIT...</p>
-	</div>
-	<div id="overview" class="overview" data-display="hide">
-		<div class="overview-wipe"></div>
-
-		<div class="overview-main">
-			<div class="overview-heading">
-				<div class="overview-heading-name">
+			<div class="overview-main">
+				<div class="overview-heading">
 					<h2>
-						<div>Gunnar</div>
-						<div>Normand</div>
-						<span>is an</span>
-						<span>interactive</span>
-						<span>developer</span>
-						<span>located in</span>
-						<span>Orlando, FL, U.S.A.</span>
+						This is the portfolio of Gunnar Normand, CEO and
+						Creative Director @
+						<a
+							class="link"
+							target="_blank"
+							href="https://www.ultramodern.us"
+							>ultramodern</a
+						>.
 					</h2>
+					<h3>
+						With over 6 years of experience in interactive web
+						development at some of the top advertising agencies in
+						the Southeast working for A-list clients such as Kohls,
+						Chick-fil-a, UCF & hundreds of small businesses, Gunnar
+						is an influential leader who combines innovation and
+						passion to produce sensational results.
+					</h3>
+					<h4>
+						You can check out some projects he's worked on with
+						agencies:
+						<details>
+							<summary>agency work</summary>
+							<a
+								href="https://www.lightingpros.net/"
+								target="_blank"
+								class="menu__item"
+								data-img="./dist/img/lighting-pros-img.jpg"
+							>
+								<span class="menu__item-text"
+									><span class="menu__item-textinner"
+										>Lighting Pros</span
+									></span
+								>
+								<span class="link menu__item-sub"
+									>view site</span
+								>
+							</a>
+							<a
+								href="https://cs3design.com/"
+								target="_blank"
+								class="menu__item"
+								data-img="./dist/img/cs3-img.png"
+							>
+								<span class="menu__item-text"
+									><span class="menu__item-textinner"
+										>CS3 Photography</span
+									></span
+								>
+								<span class="link menu__item-sub"
+									>view site</span
+								>
+							</a>
+							<a
+								href="https://datalinetechnologies.com/"
+								target="_blank"
+								class="menu__item"
+								data-img="./dist/img/data-line-img.png"
+							>
+								<span class="menu__item-text"
+									><span class="menu__item-textinner"
+										>Data Line Technologies</span
+									></span
+								>
+								<span class="link menu__item-sub"
+									>view site</span
+								>
+							</a>
+							<a
+								href="https://premierequipment.com/"
+								target="_blank"
+								class="menu__item"
+								data-img="./dist/img/premier-img-2.jpg"
+							>
+								<span class="menu__item-text"
+									><span class="menu__item-textinner"
+										>Premier Equipment</span
+									></span
+								>
+								<span class="link menu__item-sub"
+									>view site</span
+								>
+							</a>
+							<a
+								href="https://www.lelandlifestyles.com/"
+								target="_blank"
+								class="menu__item"
+								data-img="./dist/img/leland-img.jpg"
+							>
+								<span class="menu__item-text"
+									><span class="menu__item-textinner"
+										>Leland Lifestyles</span
+									></span
+								>
+								<span class="link menu__item-sub"
+									>view site</span
+								>
+							</a>
+							<a
+								href="./projects/savBeeCo/index.html"
+								target="_blank"
+								class="menu__item"
+								data-img="./dist/img/savbeeco-img.png"
+							>
+								<span class="menu__item-text"
+									><span class="menu__item-textinner"
+										>Savannahh Bee Company</span
+									></span
+								>
+								<span class="link menu__item-sub"
+									>view site</span
+								>
+							</a>
+						</details>
+					</h4>
+					<h3 class="inquiries">
+						For work inquires:
+						<a class="link" href="mailto:gunnar@gunnar.tech"
+							>gunnar@gunnar.tech</a
+						>.
+					</h3>
 				</div>
-				<h3 class="inquiries"> For freelance work please inquire <a class="link" href="mailto:gunnar@gunnar.tech">here</a>.</h3>
 			</div>
-			<nav class="work-menu">
-				<a href="javascript:void(0);" class="menu__item" data-img="./dist/img/normand-img.png">
-					<span class="menu__item-text"><span class="menu__item-textinner">Normand</span></span>
-					<span class="menu__item-sub">coming soon</span>
-				</a>
-				<a href="javascript:void(0);" class="menu__item" data-img="./dist/img/nona-img.jpg">
-					<span class="menu__item-text"><span class="menu__item-textinner">NONA</span></span>
-					<span class="menu__item-sub">coming soon</span>
-				</a>
-				<a href="https://salonempiresuites.com/" target="_blank" class="menu__item" data-img="./dist/img/salon-empire-img.jpg">
-					<span class="menu__item-text"><span class="menu__item-textinner">Salon Empire</span></span>
-					<span class="menu__item-sub">view live site</span>
-				</a>
-				<a href="https://www.lightingpros.net/" target="_blank" class="menu__item" data-img="./dist/img/lighting-pros-img.jpg">
-					<span class="menu__item-text"><span class="menu__item-textinner">Lighting Pros</span></span>
-					<span class="menu__item-sub">view live site</span>
-				</a>
-				<a href="https://cs3design.com/" target="_blank" class="menu__item" data-img="./dist/img/cs3-img.png">
-					<span class="menu__item-text"><span class="menu__item-textinner">CS3 Photography</span></span>
-					<span class="menu__item-sub">view live site</span>
-				</a>
-				<a href="https://datalinetechnologies.com/" target="_blank" class="menu__item" data-img="./dist/img/data-line-img.png">
-					<span class="menu__item-text"><span class="menu__item-textinner">Data Line Technologies</span></span>
-					<span class="menu__item-sub">view live site</span>
-				</a>
-				<a href="https://premierequipment.com/" target="_blank" class="menu__item" data-img="./dist/img/premier-img-2.jpg">
-					<span class="menu__item-text"><span class="menu__item-textinner">Premier Equipment</span></span>
-					<span class="menu__item-sub">view live site</span>
-				</a>
-				<a href="https://www.lelandlifestyles.com/" target="_blank" class="menu__item" data-img="./dist/img/leland-img.jpg">
-					<span class="menu__item-text"><span class="menu__item-textinner">Leland Lifestyles</span></span>
-					<span class="menu__item-sub">view live site</span>
-				</a>
-				<a href="./projects/savBeeCo/index.html" target="_blank" class="menu__item" data-img="./dist/img/savbeeco-img.png">
-					<span class="menu__item-text"><span class="menu__item-textinner">Savannahh Bee Company</span></span>
-					<span class="menu__item-sub">view live site</span>
-				</a>
-			</nav>
 		</div>
-	</div>
-	<header class="logo">
-		<svg id="logo" class="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
-			<defs>
-				<path id="circlePath" class="circle-path-def" d="M100,25a75,75,0,1,1-75,75A75,75,0,0,1,100,25Z" />
-				<linearGradient id="logo-gradient-stroke" x1="165.4" y1="137.76" x2="34.6" y2="62.24" gradientUnits="userSpaceOnUse">
-					<stop offset="0.06" stop-color="#3cfc81" />
-					<stop offset="0.94" stop-color="#fd971f" />
-				</linearGradient>
-			</defs>
-			<text dx="35" dy="7">
-				<textPath xlink:href="#circlePath">
-					Gunnar Normand Portfolio
-				</textPath>
-			</text>
-			<path class="logo-circle-path" d="M100,25a75,75,0,1,1-75,75A75,75,0,0,1,100,25Z" />
-			<path class="logo-path"
-			 d="M67.58,50h65.78v2.83h2.82v2.83H139V134h-2.82v16H64.76c-1.32-3.87-1-10.7-.94-16H61V55.66h2.82V52.83h3.76Zm0,3.77V56.6H64.76V134h70.48V56.6h-2.82V53.77Zm5.64,5.66h52.62v2.83H74.16v40.57h51.68V62.26h3.76v40.57h-2.82v3.77H73.22v-2.83H70.4V62.26h2.82V59.43Zm33.83,58.5h19.73v3.77H107.05v-3.77ZM77,120.76v3.77H70.4c.35-2,.23-1.82.94-2.83C72.67,120.79,74.41,120.78,77,120.76Zm-9.4,17v8.49h64.84v-8.49Z" />
-			<path data-name="rect" class="logo-rect" d="M97,96h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,96h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,96h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,96h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,92h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,92h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,92h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,92h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,88h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,88h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,88h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,88h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,84h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,84h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,84h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,84h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,80h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,80h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,80h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,80h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,76h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,76h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,76h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,76h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,72h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,72h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,72h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,72h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,68h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,68h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,68h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,68h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,96h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,96h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,96h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,96h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,92h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,92h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,92h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,92h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,88h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,88h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,88h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,88h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,84h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,84h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,84h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,84h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,80h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,80h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,80h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,80h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,76h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,76h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,76h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,76h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,72h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,72h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,72h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,72h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M97,68h2v2H97Z" />
-			<path data-name="rect" class="logo-rect" d="M89,68h2v2H89Z" />
-			<path data-name="rect" class="logo-rect" d="M85,68h2v2H85Z" />
-			<path data-name="rect" class="logo-rect" d="M93,68h2v2H93Z" />
-			<path data-name="rect" class="logo-rect" d="M113,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,68h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,68h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,68h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,68h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,96h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,92h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,88h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,84h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,80h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,76h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,72h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M113,68h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M105,68h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M101,68h2v2h-2Z" />
-			<path data-name="rect" class="logo-rect" d="M109,68h2v2h-2Z" />
-		</svg>
-	</header>
-	<aside class="sidescroller-1">
-		<svg id="border-gradient-svg" class="border-gradient-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.19 251.19">
-			<defs>
-				<style>
-					.fea95af3-7c89-4d1f-8c77-083691f99f2c {
-						fill: none;
-						stroke-miterlimit: 10;
-						stroke-width: 1.19px;
-						stroke: url("#a642e725-5db7-42ca-8ce5-3f96a29c6ea5");
-					}
-				</style>
-				<linearGradient id="a642e725-5db7-42ca-8ce5-3f96a29c6ea5" x1="71.06" y1="160.92" x2="-51.87" y2="90.28" gradientUnits="userSpaceOnUse">
-					<stop offset="0.06" stop-color="#3cfc81" />
-					<stop offset="0.94" stop-color="#fd971f" />
-				</linearGradient>
-			</defs>
-			<rect class="fea95af3-7c89-4d1f-8c77-083691f99f2c" x="0.6" y="0.6" width="18" height="250" />
-		</svg>
-		<a href="mailto:gunnar@gunnar.tech">
-			<span class="email-cta" data-label="Email for availability">Email for availability</span>
-		</a>
-	</aside>
-	<aside class="sidescroller-2">
-		<a href="mailto:gunnar@gunnar.tech">
-			<svg id="globe-icon-svg" class="globe-icon-svg" data-name="globe-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 512">
+		<header class="logo">
+			<svg
+				id="logo"
+				class="logo-svg"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 0 200 200"
+			>
 				<defs>
-					<style>
-						.ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6 {
-							fill: url("#bdbba361-2cec-4891-8858-92aa506b774e");
-						}
-					</style>
-					<linearGradient id="bdbba361-2cec-4891-8858-92aa506b774e" x1="462.82" y1="380.03" x2="33.18" y2="131.97" gradientUnits="userSpaceOnUse">
+					<path
+						id="circlePath"
+						class="circle-path-def"
+						d="M100,25a75,75,0,1,1-75,75A75,75,0,0,1,100,25Z"
+					/>
+					<linearGradient
+						id="logo-gradient-stroke"
+						x1="165.4"
+						y1="137.76"
+						x2="34.6"
+						y2="62.24"
+						gradientUnits="userSpaceOnUse"
+					>
 						<stop offset="0.06" stop-color="#3cfc81" />
 						<stop offset="0.94" stop-color="#fd971f" />
 					</linearGradient>
 				</defs>
-				<path class="ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6"
-				 d="M0,256C0,393,111,504,248,504S496,393,496,256,385,8,248,8,0,119,0,256ZM152,62.8v82.5c-44.4,9-82.2,24.1-109.1,43.2A216.94,216.94,0,0,1,152,62.8ZM248,168a472.64,472.64,0,0,1,64,4.3V339.7a472.64,472.64,0,0,1-64,4.3,472.64,472.64,0,0,1-64-4.3V172.3A472.64,472.64,0,0,1,248,168ZM32,256c0-26.9,44.1-61.4,120-78.1V334.1C76.1,317.4,32,282.9,32,256Zm10.9,67.5c26.8,19,64.6,34.2,109.1,43.2v82.5A216.94,216.94,0,0,1,42.9,323.5ZM248,472a214.64,214.64,0,0,1-64-9.7V371.8a507.13,507.13,0,0,0,64,4.2,489.13,489.13,0,0,0,64-4.2v90.5A214.64,214.64,0,0,1,248,472Zm96-22.8V366.7c44.4-9,82.2-24.1,109.1-43.2A216.94,216.94,0,0,1,344,449.2ZM464,256c0,26.9-44.1,61.4-120,78.1V177.9c75.9,16.7,120,51.2,120,78.1Zm-10.9-67.5c-26.8-19-64.6-34.2-109.1-43.2V62.8A216.94,216.94,0,0,1,453.1,188.5ZM312,140.2a507.13,507.13,0,0,0-64-4.2,489.13,489.13,0,0,0-64,4.2V49.7a216,216,0,0,1,128,0Z" />
+				<text dx="35" dy="7">
+					<textPath xlink:href="#circlePath">
+						Gunnar Normand Portfolio
+					</textPath>
+				</text>
+				<path
+					class="logo-circle-path"
+					d="M100,25a75,75,0,1,1-75,75A75,75,0,0,1,100,25Z"
+				/>
+				<path
+					class="logo-path"
+					d="M67.58,50h65.78v2.83h2.82v2.83H139V134h-2.82v16H64.76c-1.32-3.87-1-10.7-.94-16H61V55.66h2.82V52.83h3.76Zm0,3.77V56.6H64.76V134h70.48V56.6h-2.82V53.77Zm5.64,5.66h52.62v2.83H74.16v40.57h51.68V62.26h3.76v40.57h-2.82v3.77H73.22v-2.83H70.4V62.26h2.82V59.43Zm33.83,58.5h19.73v3.77H107.05v-3.77ZM77,120.76v3.77H70.4c.35-2,.23-1.82.94-2.83C72.67,120.79,74.41,120.78,77,120.76Zm-9.4,17v8.49h64.84v-8.49Z"
+				/>
+				<path data-name="rect" class="logo-rect" d="M97,96h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,96h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,96h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,96h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,92h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,92h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,92h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,92h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,88h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,88h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,88h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,88h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,84h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,84h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,84h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,84h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,80h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,80h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,80h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,80h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,76h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,76h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,76h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,76h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,72h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,72h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,72h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,72h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,68h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,68h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,68h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,68h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,96h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,96h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,96h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,96h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,92h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,92h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,92h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,92h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,88h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,88h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,88h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,88h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,84h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,84h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,84h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,84h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,80h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,80h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,80h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,80h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,76h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,76h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,76h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,76h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,72h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,72h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,72h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,72h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M97,68h2v2H97Z" />
+				<path data-name="rect" class="logo-rect" d="M89,68h2v2H89Z" />
+				<path data-name="rect" class="logo-rect" d="M85,68h2v2H85Z" />
+				<path data-name="rect" class="logo-rect" d="M93,68h2v2H93Z" />
+				<path data-name="rect" class="logo-rect" d="M113,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,68h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,68h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,68h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,68h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,96h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,92h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,88h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,84h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,80h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,76h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,72h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M113,68h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M105,68h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M101,68h2v2h-2Z" />
+				<path data-name="rect" class="logo-rect" d="M109,68h2v2h-2Z" />
 			</svg>
-		</a>
-		<svg id="border-gradient-svg" class="border-gradient-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.19 251.19">
-			<defs>
-				<style>
-					.fea95af3-7c89-4d1f-8c77-083691f99f2c {
-						fill: none;
-						stroke-miterlimit: 10;
-						stroke-width: 1.19px;
-						stroke: url("#a642e725-5db7-42ca-8ce5-3f96a29c6ea5");
-					}
-				</style>
-				<linearGradient id="a642e725-5db7-42ca-8ce5-3f96a29c6ea5" x1="71.06" y1="160.92" x2="-51.87" y2="90.28" gradientUnits="userSpaceOnUse">
-					<stop offset="0.06" stop-color="#3cfc81" />
-					<stop offset="0.94" stop-color="#fd971f" />
-				</linearGradient>
-			</defs>
-			<rect class="fea95af3-7c89-4d1f-8c77-083691f99f2c" x="0.6" y="0.6" width="18" height="250" />
-		</svg>
-		<a href="mailto:gunnar@gunnar.tech">
-			<span class="email-cta" data-label="Email for availability">Email for availability</span>
-		</a>
-	</aside>
-	<aside class="sidescroller-3">
-		<a href="mailto:gunnar@gunnar.tech">
-			<svg id="globe-icon-svg" class="globe-icon-svg" data-name="globe-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 496 512">
+		</header>
+		<aside class="sidescroller-1">
+			<svg
+				id="border-gradient-svg"
+				class="border-gradient-svg"
+				data-name="Layer 1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 0 19.19 251.19"
+			>
 				<defs>
 					<style>
-						.ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6 {
-							fill: url("#bdbba361-2cec-4891-8858-92aa506b774e");
+						.fea95af3-7c89-4d1f-8c77-083691f99f2c {
+							fill: none;
+							stroke-miterlimit: 10;
+							stroke-width: 1.19px;
+							stroke: url("#a642e725-5db7-42ca-8ce5-3f96a29c6ea5");
 						}
 					</style>
-					<linearGradient id="bdbba361-2cec-4891-8858-92aa506b774e" x1="462.82" y1="380.03" x2="33.18" y2="131.97" gradientUnits="userSpaceOnUse">
+					<linearGradient
+						id="a642e725-5db7-42ca-8ce5-3f96a29c6ea5"
+						x1="71.06"
+						y1="160.92"
+						x2="-51.87"
+						y2="90.28"
+						gradientUnits="userSpaceOnUse"
+					>
 						<stop offset="0.06" stop-color="#3cfc81" />
 						<stop offset="0.94" stop-color="#fd971f" />
 					</linearGradient>
 				</defs>
-				<path class="ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6"
-				 d="M0,256C0,393,111,504,248,504S496,393,496,256,385,8,248,8,0,119,0,256ZM152,62.8v82.5c-44.4,9-82.2,24.1-109.1,43.2A216.94,216.94,0,0,1,152,62.8ZM248,168a472.64,472.64,0,0,1,64,4.3V339.7a472.64,472.64,0,0,1-64,4.3,472.64,472.64,0,0,1-64-4.3V172.3A472.64,472.64,0,0,1,248,168ZM32,256c0-26.9,44.1-61.4,120-78.1V334.1C76.1,317.4,32,282.9,32,256Zm10.9,67.5c26.8,19,64.6,34.2,109.1,43.2v82.5A216.94,216.94,0,0,1,42.9,323.5ZM248,472a214.64,214.64,0,0,1-64-9.7V371.8a507.13,507.13,0,0,0,64,4.2,489.13,489.13,0,0,0,64-4.2v90.5A214.64,214.64,0,0,1,248,472Zm96-22.8V366.7c44.4-9,82.2-24.1,109.1-43.2A216.94,216.94,0,0,1,344,449.2ZM464,256c0,26.9-44.1,61.4-120,78.1V177.9c75.9,16.7,120,51.2,120,78.1Zm-10.9-67.5c-26.8-19-64.6-34.2-109.1-43.2V62.8A216.94,216.94,0,0,1,453.1,188.5ZM312,140.2a507.13,507.13,0,0,0-64-4.2,489.13,489.13,0,0,0-64,4.2V49.7a216,216,0,0,1,128,0Z" />
+				<rect
+					class="fea95af3-7c89-4d1f-8c77-083691f99f2c"
+					x="0.6"
+					y="0.6"
+					width="18"
+					height="250"
+				/>
 			</svg>
-		</a>
-		<svg id="border-gradient-svg" class="border-gradient-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.19 251.19">
-			<defs>
-				<style>
-					.fea95af3-7c89-4d1f-8c77-083691f99f2c {
-						fill: none;
-						stroke-miterlimit: 10;
-						stroke-width: 1.19px;
-						stroke: url("#a642e725-5db7-42ca-8ce5-3f96a29c6ea5");
-					}
-				</style>
-				<linearGradient id="a642e725-5db7-42ca-8ce5-3f96a29c6ea5" x1="71.06" y1="160.92" x2="-51.87" y2="90.28" gradientUnits="userSpaceOnUse">
-					<stop offset="0.06" stop-color="#3cfc81" />
-					<stop offset="0.94" stop-color="#fd971f" />
-				</linearGradient>
-			</defs>
-			<rect class="fea95af3-7c89-4d1f-8c77-083691f99f2c" x="0.6" y="0.6" width="18" height="250" />
-		</svg>
-		<a href="mailto:gunnar@gunnar.tech">
-			<span class="email-cta" data-label="Email for availability">Email for availability</span>
-		</a>
-	</aside>
-	<main id="main">
-		<div class="wrap z-depth-5">
-			<div class="top-bar">
-				<div class="circle red-circle"></div>
-				<div class="circle yellow-circle"></div>
-				<div class="circle green-circle"></div>
-				<a id="top-link" href="#">gunnar@gunnar.tech ~/Documents/portfolio/home</a>
-			</div>
-			<div class="inner-wrap">
-				<h1 id="line1" class="heading">gunnar normand portfolio</h1>
-				<p id="line2" class="note">INTERACTIVE DESIGNER &amp; DEVELOPER</p>
-				<p id="line3" class="code-line">Hello, my name is Gunnar Normand.</p>
-				<p id="line4" class="code-line">I am an Interactive Developer located in Orlando, FL.</p>
-				<p id="line5" class="code-line">I enjoy building applications and websites with an attention to ultramodern animations.</p>
-				<p id="line6" class="code-line">click the logo or enter a secret key...</p>
-			</div>
-			<div id="skip-control" class="skip-control">
-				<p>skip</p>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-					<path fill="#3cfc81"
-					 d="M244.5 230.9L52.5 71.4C31.9 54.3 0 68.6 0 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160.5c15.3-12.9 15.3-36.5 0-49.2zM224 255.4L32 416V96l192 159.4zm276.5-24.5l-192-159.4C287.9 54.3 256 68.6 256 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160.5c15.3-12.9 15.3-36.5 0-49.2zM480 255.4L288 416V96l192 159.4z" />
+			<a href="mailto:gunnar@gunnar.tech">
+				<span class="email-cta" data-label="Email for availability"
+					>Email for availability</span
+				>
+			</a>
+		</aside>
+		<aside class="sidescroller-2">
+			<a href="mailto:gunnar@gunnar.tech">
+				<svg
+					id="globe-icon-svg"
+					class="globe-icon-svg"
+					data-name="globe-icon-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 496 512"
+				>
+					<defs>
+						<style>
+							.ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6 {
+								fill: url("#bdbba361-2cec-4891-8858-92aa506b774e");
+							}
+						</style>
+						<linearGradient
+							id="bdbba361-2cec-4891-8858-92aa506b774e"
+							x1="462.82"
+							y1="380.03"
+							x2="33.18"
+							y2="131.97"
+							gradientUnits="userSpaceOnUse"
+						>
+							<stop offset="0.06" stop-color="#3cfc81" />
+							<stop offset="0.94" stop-color="#fd971f" />
+						</linearGradient>
+					</defs>
+					<path
+						class="ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6"
+						d="M0,256C0,393,111,504,248,504S496,393,496,256,385,8,248,8,0,119,0,256ZM152,62.8v82.5c-44.4,9-82.2,24.1-109.1,43.2A216.94,216.94,0,0,1,152,62.8ZM248,168a472.64,472.64,0,0,1,64,4.3V339.7a472.64,472.64,0,0,1-64,4.3,472.64,472.64,0,0,1-64-4.3V172.3A472.64,472.64,0,0,1,248,168ZM32,256c0-26.9,44.1-61.4,120-78.1V334.1C76.1,317.4,32,282.9,32,256Zm10.9,67.5c26.8,19,64.6,34.2,109.1,43.2v82.5A216.94,216.94,0,0,1,42.9,323.5ZM248,472a214.64,214.64,0,0,1-64-9.7V371.8a507.13,507.13,0,0,0,64,4.2,489.13,489.13,0,0,0,64-4.2v90.5A214.64,214.64,0,0,1,248,472Zm96-22.8V366.7c44.4-9,82.2-24.1,109.1-43.2A216.94,216.94,0,0,1,344,449.2ZM464,256c0,26.9-44.1,61.4-120,78.1V177.9c75.9,16.7,120,51.2,120,78.1Zm-10.9-67.5c-26.8-19-64.6-34.2-109.1-43.2V62.8A216.94,216.94,0,0,1,453.1,188.5ZM312,140.2a507.13,507.13,0,0,0-64-4.2,489.13,489.13,0,0,0-64,4.2V49.7a216,216,0,0,1,128,0Z"
+					/>
 				</svg>
-			</div>
-		</div>
-		<div class="keyboard-wrap">
-			<div class="kbd-toggle-container">
-				<input class="kbd-toggle" type="checkbox" value="">
-				<p class="kbd-init-message">Please enter your password or secret key...</p>
-			</div>
-			<div class="keyboard-wrap-top">
-				<div data-key="81" class="key">
-					<kbd>Q</kbd>
-				</div>
-				<div data-key="87" class="key">
-					<kbd>W</kbd>
-				</div>
-				<div data-key="69" class="key">
-					<kbd>E</kbd>
-				</div>
-				<div data-key="82" class="key">
-					<kbd>R</kbd>
-				</div>
-				<div data-key="84" class="key">
-					<kbd>T</kbd>
-				</div>
-				<div data-key="89" class="key">
-					<kbd>Y</kbd>
-				</div>
-				<div data-key="85" class="key">
-					<kbd>U</kbd>
-				</div>
-				<div data-key="73" class="key">
-					<kbd>I</kbd>
-				</div>
-				<div data-key="79" class="key">
-					<kbd>O</kbd>
-				</div>
-				<div data-key="80" class="key">
-					<kbd>P</kbd>
-				</div>
-			</div>
-			<div class="keyboard-wrap-middle">
-				<div data-key="65" class="key">
-					<kbd>A</kbd>
-				</div>
-				<div data-key="83" class="key">
-					<kbd>S</kbd>
-				</div>
-				<div data-key="68" class="key">
-					<kbd>D</kbd>
-				</div>
-				<div data-key="70" class="key">
-					<kbd>F</kbd>
-				</div>
-				<div data-key="71" class="key">
-					<kbd>G</kbd>
-				</div>
-				<div data-key="72" class="key">
-					<kbd>H</kbd>
-				</div>
-				<div data-key="74" class="key">
-					<kbd>J</kbd>
-				</div>
-				<div data-key="75" class="key">
-					<kbd>K</kbd>
-				</div>
-				<div data-key="76" class="key">
-					<kbd>L</kbd>
-				</div>
-			</div>
-			<div class="keyboard-wrap-bottom">
-				<div data-key="90" class="key">
-					<kbd>Z</kbd>
-				</div>
-				<div data-key="88" class="key">
-					<kbd>X</kbd>
-				</div>
-				<div data-key="67" class="key">
-					<kbd>C</kbd>
-				</div>
-				<div data-key="86" class="key">
-					<kbd>V</kbd>
-				</div>
-				<div data-key="66" class="key">
-					<kbd>B</kbd>
-				</div>
-				<div data-key="78" class="key">
-					<kbd>N</kbd>
-				</div>
-				<div data-key="77" class="key">
-					<kbd>M</kbd>
-				</div>
-			</div>
-		</div>
-		<audio data-key="81" src="./dist/audio/type.wav"></audio>
-		<audio data-key="87" src="./dist/audio/type.wav"></audio>
-		<audio data-key="69" src="./dist/audio/type.wav"></audio>
-		<audio data-key="82" src="./dist/audio/type.wav"></audio>
-		<audio data-key="84" src="./dist/audio/type.wav"></audio>
-		<audio data-key="89" src="./dist/audio/type.wav"></audio>
-		<audio data-key="85" src="./dist/audio/type.wav"></audio>
-		<audio data-key="73" src="./dist/audio/type.wav"></audio>
-		<audio data-key="79" src="./dist/audio/type.wav"></audio>
-		<audio data-key="80" src="./dist/audio/type.wav"></audio>
-		<audio data-key="65" src="./dist/audio/type.wav"></audio>
-		<audio data-key="83" src="./dist/audio/type.wav"></audio>
-		<audio data-key="68" src="./dist/audio/type.wav"></audio>
-		<audio data-key="70" src="./dist/audio/type.wav"></audio>
-		<audio data-key="71" src="./dist/audio/type.wav"></audio>
-		<audio data-key="72" src="./dist/audio/type.wav"></audio>
-		<audio data-key="74" src="./dist/audio/type.wav"></audio>
-		<audio data-key="75" src="./dist/audio/type.wav"></audio>
-		<audio data-key="76" src="./dist/audio/type.wav"></audio>
-		<audio data-key="90" src="./dist/audio/type.wav"></audio>
-		<audio data-key="88" src="./dist/audio/type.wav"></audio>
-		<audio data-key="67" src="./dist/audio/type.wav"></audio>
-		<audio data-key="86" src="./dist/audio/type.wav"></audio>
-		<audio data-key="66" src="./dist/audio/type.wav"></audio>
-		<audio data-key="78" src="./dist/audio/type.wav"></audio>
-		<audio data-key="77" src="./dist/audio/type.wav"></audio>
-		<audio id="opening" src="./dist/audio/opening.wav"></audio>
-		<audio id="success" src="./dist/audio/success.wav"></audio>
-		<p class="copyright"><span data-label="© 2020 gunnar.tech">© 2020 gunnar.tech</span></p>
-	</main>
-	<footer>
-		<a class="social-link" href="mailto:gunnar@gunnar.tech">
-			<svg class="email-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-				<path
-				 d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+			</a>
+			<svg
+				id="border-gradient-svg"
+				class="border-gradient-svg"
+				data-name="Layer 1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 0 19.19 251.19"
+			>
+				<defs>
+					<style>
+						.fea95af3-7c89-4d1f-8c77-083691f99f2c {
+							fill: none;
+							stroke-miterlimit: 10;
+							stroke-width: 1.19px;
+							stroke: url("#a642e725-5db7-42ca-8ce5-3f96a29c6ea5");
+						}
+					</style>
+					<linearGradient
+						id="a642e725-5db7-42ca-8ce5-3f96a29c6ea5"
+						x1="71.06"
+						y1="160.92"
+						x2="-51.87"
+						y2="90.28"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop offset="0.06" stop-color="#3cfc81" />
+						<stop offset="0.94" stop-color="#fd971f" />
+					</linearGradient>
+				</defs>
+				<rect
+					class="fea95af3-7c89-4d1f-8c77-083691f99f2c"
+					x="0.6"
+					y="0.6"
+					width="18"
+					height="250"
+				/>
 			</svg>
-			<span>email</span>
-		</a>
-		<a class="social-link" href="./dist/GunnarNormand.pdf" download>
-			<svg class="resume-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-				<path
-				 d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm80 273.6v19.2c0 10.61-10.03 19.2-22.4 19.2H102.4c-12.37 0-22.4-8.6-22.4-19.2v-19.2c0-31.81 30.09-57.6 67.2-57.6h4.95c12.29 5.12 25.73 8 39.85 8s27.56-2.88 39.85-8h4.95c37.11 0 67.2 25.79 67.2 57.6zM192 320c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64zm185-215L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z" />
+			<a href="mailto:gunnar@gunnar.tech">
+				<span class="email-cta" data-label="Email for availability"
+					>Email for availability</span
+				>
+			</a>
+		</aside>
+		<aside class="sidescroller-3">
+			<a href="mailto:gunnar@gunnar.tech">
+				<svg
+					id="globe-icon-svg"
+					class="globe-icon-svg"
+					data-name="globe-icon-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 496 512"
+				>
+					<defs>
+						<style>
+							.ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6 {
+								fill: url("#bdbba361-2cec-4891-8858-92aa506b774e");
+							}
+						</style>
+						<linearGradient
+							id="bdbba361-2cec-4891-8858-92aa506b774e"
+							x1="462.82"
+							y1="380.03"
+							x2="33.18"
+							y2="131.97"
+							gradientUnits="userSpaceOnUse"
+						>
+							<stop offset="0.06" stop-color="#3cfc81" />
+							<stop offset="0.94" stop-color="#fd971f" />
+						</linearGradient>
+					</defs>
+					<path
+						class="ba997464-a0b4-4e42-8a6d-5ae5ccfd88e6"
+						d="M0,256C0,393,111,504,248,504S496,393,496,256,385,8,248,8,0,119,0,256ZM152,62.8v82.5c-44.4,9-82.2,24.1-109.1,43.2A216.94,216.94,0,0,1,152,62.8ZM248,168a472.64,472.64,0,0,1,64,4.3V339.7a472.64,472.64,0,0,1-64,4.3,472.64,472.64,0,0,1-64-4.3V172.3A472.64,472.64,0,0,1,248,168ZM32,256c0-26.9,44.1-61.4,120-78.1V334.1C76.1,317.4,32,282.9,32,256Zm10.9,67.5c26.8,19,64.6,34.2,109.1,43.2v82.5A216.94,216.94,0,0,1,42.9,323.5ZM248,472a214.64,214.64,0,0,1-64-9.7V371.8a507.13,507.13,0,0,0,64,4.2,489.13,489.13,0,0,0,64-4.2v90.5A214.64,214.64,0,0,1,248,472Zm96-22.8V366.7c44.4-9,82.2-24.1,109.1-43.2A216.94,216.94,0,0,1,344,449.2ZM464,256c0,26.9-44.1,61.4-120,78.1V177.9c75.9,16.7,120,51.2,120,78.1Zm-10.9-67.5c-26.8-19-64.6-34.2-109.1-43.2V62.8A216.94,216.94,0,0,1,453.1,188.5ZM312,140.2a507.13,507.13,0,0,0-64-4.2,489.13,489.13,0,0,0-64,4.2V49.7a216,216,0,0,1,128,0Z"
+					/>
+				</svg>
+			</a>
+			<svg
+				id="border-gradient-svg"
+				class="border-gradient-svg"
+				data-name="Layer 1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 0 19.19 251.19"
+			>
+				<defs>
+					<style>
+						.fea95af3-7c89-4d1f-8c77-083691f99f2c {
+							fill: none;
+							stroke-miterlimit: 10;
+							stroke-width: 1.19px;
+							stroke: url("#a642e725-5db7-42ca-8ce5-3f96a29c6ea5");
+						}
+					</style>
+					<linearGradient
+						id="a642e725-5db7-42ca-8ce5-3f96a29c6ea5"
+						x1="71.06"
+						y1="160.92"
+						x2="-51.87"
+						y2="90.28"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop offset="0.06" stop-color="#3cfc81" />
+						<stop offset="0.94" stop-color="#fd971f" />
+					</linearGradient>
+				</defs>
+				<rect
+					class="fea95af3-7c89-4d1f-8c77-083691f99f2c"
+					x="0.6"
+					y="0.6"
+					width="18"
+					height="250"
+				/>
 			</svg>
-			<span>resume</span>
-		</a>
-		<a class="social-link" href="https://github.com/gunnarnormand" target="_blank">
-			<svg class="github-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
-				<path
-				 d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z" />
-			</svg>
-			<span>GitHub</span>
-		</a>
-		<a class="social-link" href="http://codepen.io/gnormand/" target="_blank">
-			<svg class="codepen-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-				<path
-				 d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z" />
-			</svg>
-			<span>CodePen</span>
-		</a>
-		<a class="social-link" href="https://www.linkedin.com/in/gunnarnormand/" target="_blank">
-			<svg class="linkedin-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-				<path
-				 d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-			</svg>
-			<span>LinkedIn</span>
-		</a>
-	</footer>
+			<a href="mailto:gunnar@gunnar.tech">
+				<span class="email-cta" data-label="Email for availability"
+					>Email for availability</span
+				>
+			</a>
+		</aside>
+		<main id="main">
+			<div class="wrap z-depth-5">
+				<div class="top-bar">
+					<div class="circle red-circle"></div>
+					<div class="circle yellow-circle"></div>
+					<div class="circle green-circle"></div>
+					<a id="top-link" href="#"
+						>gunnar@gunnar.tech ~/Documents/portfolio/home</a
+					>
+				</div>
+				<div class="inner-wrap">
+					<h1 id="line1" class="heading">gunnar normand portfolio</h1>
+					<p id="line2" class="note">
+						CEO | CREATIVE DIRECTOR @ ULTRAMODERN
+					</p>
+					<p id="line3" class="code-line">
+						Hello, my name is Gunnar Normand.
+					</p>
+					<p id="line4" class="code-line">
+						I am the Founder of Ultramodern LLC a digital marketing
+						agency located in Orlando, FL.
+					</p>
+					<p id="line5" class="code-line">
+						My goal is to make the world a better place through
+						positive user experience design and aesthetic
+						ultramodern animations.
+					</p>
+					<p id="line6" class="code-line">
+						For more click the logo or enter a secret key...
+					</p>
+				</div>
+				<div id="skip-control" class="skip-control">
+					<p>skip</p>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 512 512"
+					>
+						<path
+							fill="#3cfc81"
+							d="M244.5 230.9L52.5 71.4C31.9 54.3 0 68.6 0 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160.5c15.3-12.9 15.3-36.5 0-49.2zM224 255.4L32 416V96l192 159.4zm276.5-24.5l-192-159.4C287.9 54.3 256 68.6 256 96v320c0 27.4 31.9 41.8 52.5 24.6l192-160.5c15.3-12.9 15.3-36.5 0-49.2zM480 255.4L288 416V96l192 159.4z"
+						/>
+					</svg>
+				</div>
+			</div>
+			<div class="keyboard-wrap">
+				<div class="kbd-toggle-container">
+					<input class="kbd-toggle" type="checkbox" value="" />
+					<p class="kbd-init-message">
+						Please enter your password or secret key...
+					</p>
+				</div>
+				<div class="keyboard-wrap-top">
+					<div data-key="81" class="key">
+						<kbd>Q</kbd>
+					</div>
+					<div data-key="87" class="key">
+						<kbd>W</kbd>
+					</div>
+					<div data-key="69" class="key">
+						<kbd>E</kbd>
+					</div>
+					<div data-key="82" class="key">
+						<kbd>R</kbd>
+					</div>
+					<div data-key="84" class="key">
+						<kbd>T</kbd>
+					</div>
+					<div data-key="89" class="key">
+						<kbd>Y</kbd>
+					</div>
+					<div data-key="85" class="key">
+						<kbd>U</kbd>
+					</div>
+					<div data-key="73" class="key">
+						<kbd>I</kbd>
+					</div>
+					<div data-key="79" class="key">
+						<kbd>O</kbd>
+					</div>
+					<div data-key="80" class="key">
+						<kbd>P</kbd>
+					</div>
+				</div>
+				<div class="keyboard-wrap-middle">
+					<div data-key="65" class="key">
+						<kbd>A</kbd>
+					</div>
+					<div data-key="83" class="key">
+						<kbd>S</kbd>
+					</div>
+					<div data-key="68" class="key">
+						<kbd>D</kbd>
+					</div>
+					<div data-key="70" class="key">
+						<kbd>F</kbd>
+					</div>
+					<div data-key="71" class="key">
+						<kbd>G</kbd>
+					</div>
+					<div data-key="72" class="key">
+						<kbd>H</kbd>
+					</div>
+					<div data-key="74" class="key">
+						<kbd>J</kbd>
+					</div>
+					<div data-key="75" class="key">
+						<kbd>K</kbd>
+					</div>
+					<div data-key="76" class="key">
+						<kbd>L</kbd>
+					</div>
+				</div>
+				<div class="keyboard-wrap-bottom">
+					<div data-key="90" class="key">
+						<kbd>Z</kbd>
+					</div>
+					<div data-key="88" class="key">
+						<kbd>X</kbd>
+					</div>
+					<div data-key="67" class="key">
+						<kbd>C</kbd>
+					</div>
+					<div data-key="86" class="key">
+						<kbd>V</kbd>
+					</div>
+					<div data-key="66" class="key">
+						<kbd>B</kbd>
+					</div>
+					<div data-key="78" class="key">
+						<kbd>N</kbd>
+					</div>
+					<div data-key="77" class="key">
+						<kbd>M</kbd>
+					</div>
+				</div>
+			</div>
+			<audio data-key="81" src="./dist/audio/type.wav"></audio>
+			<audio data-key="87" src="./dist/audio/type.wav"></audio>
+			<audio data-key="69" src="./dist/audio/type.wav"></audio>
+			<audio data-key="82" src="./dist/audio/type.wav"></audio>
+			<audio data-key="84" src="./dist/audio/type.wav"></audio>
+			<audio data-key="89" src="./dist/audio/type.wav"></audio>
+			<audio data-key="85" src="./dist/audio/type.wav"></audio>
+			<audio data-key="73" src="./dist/audio/type.wav"></audio>
+			<audio data-key="79" src="./dist/audio/type.wav"></audio>
+			<audio data-key="80" src="./dist/audio/type.wav"></audio>
+			<audio data-key="65" src="./dist/audio/type.wav"></audio>
+			<audio data-key="83" src="./dist/audio/type.wav"></audio>
+			<audio data-key="68" src="./dist/audio/type.wav"></audio>
+			<audio data-key="70" src="./dist/audio/type.wav"></audio>
+			<audio data-key="71" src="./dist/audio/type.wav"></audio>
+			<audio data-key="72" src="./dist/audio/type.wav"></audio>
+			<audio data-key="74" src="./dist/audio/type.wav"></audio>
+			<audio data-key="75" src="./dist/audio/type.wav"></audio>
+			<audio data-key="76" src="./dist/audio/type.wav"></audio>
+			<audio data-key="90" src="./dist/audio/type.wav"></audio>
+			<audio data-key="88" src="./dist/audio/type.wav"></audio>
+			<audio data-key="67" src="./dist/audio/type.wav"></audio>
+			<audio data-key="86" src="./dist/audio/type.wav"></audio>
+			<audio data-key="66" src="./dist/audio/type.wav"></audio>
+			<audio data-key="78" src="./dist/audio/type.wav"></audio>
+			<audio data-key="77" src="./dist/audio/type.wav"></audio>
+			<audio id="opening" src="./dist/audio/opening.wav"></audio>
+			<audio id="success" src="./dist/audio/success.wav"></audio>
+			<p class="copyright">
+				<span data-label="© 2021 gunnar.tech">© 2021 gunnar.tech</span>
+			</p>
+		</main>
+		<footer>
+			<a class="social-link" href="mailto:gunnar@gunnar.tech">
+				<svg
+					class="email-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 512 512"
+				>
+					<path
+						d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+					/>
+				</svg>
+				<span>email</span>
+			</a>
+			<a class="social-link" href="./dist/GunnarNormand.pdf" download>
+				<svg
+					class="resume-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 384 512"
+				>
+					<path
+						d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm80 273.6v19.2c0 10.61-10.03 19.2-22.4 19.2H102.4c-12.37 0-22.4-8.6-22.4-19.2v-19.2c0-31.81 30.09-57.6 67.2-57.6h4.95c12.29 5.12 25.73 8 39.85 8s27.56-2.88 39.85-8h4.95c37.11 0 67.2 25.79 67.2 57.6zM192 320c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64zm185-215L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+					/>
+				</svg>
+				<span>resume</span>
+			</a>
+			<a
+				class="social-link"
+				href="https://github.com/gunnarnormand"
+				target="_blank"
+			>
+				<svg
+					class="github-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 480 512"
+				>
+					<path
+						d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
+					/>
+				</svg>
+				<span>GitHub</span>
+			</a>
+			<a
+				class="social-link"
+				href="http://codepen.io/ultramodern/"
+				target="_blank"
+			>
+				<svg
+					class="codepen-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 512 512"
+				>
+					<path
+						d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"
+					/>
+				</svg>
+				<span>CodePen</span>
+			</a>
+			<a
+				class="social-link"
+				href="https://www.linkedin.com/in/gunnarnormand/"
+				target="_blank"
+			>
+				<svg
+					class="linkedin-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 448 512"
+				>
+					<path
+						d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+					/>
+				</svg>
+				<span>LinkedIn</span>
+			</a>
+			<a
+				class="social-link"
+				href="https://www.instagram.com/gunnar.tech/"
+				target="_blank"
+			>
+				<svg
+					class="instagram-svg"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 448 512"
+				>
+					<path
+						d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+					/>
+				</svg>
+				<span>Instagram</span>
+			</a>
+		</footer>
 
-	<!-- JS -->
-	<script type="text/javascript" src="dist/js/gsap-min/TweenMax.min.js"></script>
-	<script type="text/javascript" src="dist/js/gsap-min/utils/SplitText.min.js"></script>
-	<script type="text/javascript" src="dist/js/gsap-min/plugins/ScrambleTextPlugin.min.js"></script>
-	<script type="text/javascript" src="dist/js/gsap-min/easing/CustomEase.min.js"></script>
-	<script type="text/javascript" src="dist/js/gsap-min/easing/CustomWiggle.min.js"></script>
-	<script type="text/javascript" src="dist/js/bodyScrollLock.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-	<script type="text/javascript" src="dist/js/bundle.min.js"></script>
-</body>
-
+		<!-- JS -->
+		<script
+			type="text/javascript"
+			src="dist/js/gsap-min/TweenMax.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="dist/js/gsap-min/utils/SplitText.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="dist/js/gsap-min/plugins/ScrambleTextPlugin.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="dist/js/gsap-min/easing/CustomEase.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="dist/js/gsap-min/easing/CustomWiggle.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="dist/js/bodyScrollLock.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"
+		></script>
+		<script type="text/javascript" src="dist/js/bundle.min.js"></script>
+	</body>
 </html>

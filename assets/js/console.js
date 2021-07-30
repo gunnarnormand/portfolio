@@ -74,7 +74,7 @@ const ConsoleModule = (function() {
       },{
         yPercent: 0,
         alpha: 1,
-        scrambleText:{text:'INTERACTIVE DESIGNER &amp; DEVELOPER', chars:'upperCase', speed:1, revealDelay:0.5},
+        scrambleText:{text:'CEO &amp; CREATIVE DIRECTOR @ ULTRAMODERN', chars:'upperCase', speed:1, revealDelay:0.5},
         delay: 0
       })
 			.fromTo($line3, 1, {yPercent: -50},{opacity: 1, yPercent: 0, ease: Back.easeOut.config(2)})
